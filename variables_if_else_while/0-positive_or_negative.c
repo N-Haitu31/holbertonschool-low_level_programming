@@ -24,12 +24,12 @@ int main(void)
 
 	else if (n < 0)
 	{
-		printf("%dis negative\n", n);
+		printf("%d is negative\n", n);
 	}
 
 	else
 	{
-		printf("%dis zero\n", n);
+		printf("%d is zero\n", n);
 	}
 	return (0);
 }

@@ -17,3 +17,7 @@ The output file should be named the same as the C file, but with the extension .
 5-printf.c : C program prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
 
 6-size.c : C program that prints the size of various types on the computer it is compiled and run on.
+
+7. What happens when you type gcc main.c
+
+100-intel : script that generates the assembly code (Intel syntax) of a C code and save it in an output file.

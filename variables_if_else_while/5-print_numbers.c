@@ -15,10 +15,10 @@ int main(void)
 
 	for (n = 48 ; n < 57 ; n++)
 	{
-		putchar (n);
+		printf(%d, n);
 	}
 
-	putchar ('\n');
+	printf('\n');
 
 	return (0);
 }

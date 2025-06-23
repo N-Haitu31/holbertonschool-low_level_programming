@@ -1,6 +1,6 @@
 #include "main.h"
 
- /**
+/**
  * print_numbers - Prints the numbers from 0 to 9.
  * Description: This function uses _putchar to
  * print the numbers.

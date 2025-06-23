@@ -14,4 +14,6 @@
 
 6-print_line.c : Write a function that draws a straight line in the terminal.
 
-7-print_diagonal.c : Write a function that draws a diagonal line on the terminal.
+7-print_diagonal.c : Write a function that draws a diagonal line on the termina
+
+8-print_square.c : Write a function that prints a square, followed by a new line

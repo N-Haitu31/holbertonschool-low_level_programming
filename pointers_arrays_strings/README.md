@@ -6,4 +6,4 @@ C - Pointers, arrays and strings
 
 2-strlen.c : Write a function that returns the length of a string.
 
-
+3-puts.c : Write a function that prints a string, followed by a new line, to stdout.

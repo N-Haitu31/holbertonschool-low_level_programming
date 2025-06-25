@@ -7,7 +7,7 @@
 
 void puts2(char *str)
 {
-	int i;
+	int i = 0;
 
 	/* Boucle pour parcourir la chaîne tant que le caractère actuel*/
 	/* n'est pas le caractère nul*/

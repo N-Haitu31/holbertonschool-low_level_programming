@@ -24,20 +24,18 @@ void puts_half(char *str)
 		n = len / 2; /*Si 'len' est pair,*/
 			     /* 'n' est défini comme la moitié de la longueur*/
 
-		for (i = len / 2; i < len; i++)
-		{
-			_putchar(str[i]);
-		}
 	}
 
 	else
 	{
 		n = (len + 1) / 2; /*Longueur impaire*/
 
-		for (i = len - n; i < len; i++)
-		{
-			_putchar(str[i]);
-		}
+	}
+
+	while (n < i)
+	{
+		_putchar(str[n]);
+		n++;
 	}
 	_putchar('\n');
 }

@@ -18,7 +18,7 @@ void puts2(char *str)
 			_putchar(str[i]);/*Imprime le caractère à l'index pair*/
 		}
 
-		i++;/*Incrémentation de l'index pour passer au caractère suivant* -la
+		i++;/*Incrémentation de l'index pour passer au caractère suivant*/
 	}
 	_putchar('\n');
 }

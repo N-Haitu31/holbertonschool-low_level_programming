@@ -34,9 +34,9 @@ void puts_half(char *str)
 	{
 		n = (len + 1) / 2; /*Longueur impaire*/
 
-		for (i = len - n; i < len; i++)
+		for (i = len - n; i < len; i--)
 		{
-			_putchar(str[len]);
+			_putchar(str[i]);
 		}
 	}
 	_putchar('\n');

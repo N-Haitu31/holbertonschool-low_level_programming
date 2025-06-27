@@ -8,12 +8,10 @@
 int _atoi(char *s)
 
 {
-	short boolean;
 	int result = 0;
 	int sign = 1;
 	int i = 0;
 
-	boolean = 0;
 
 	while (s[i] == ' ')
 	{
@@ -35,14 +33,13 @@ int _atoi(char *s)
 		{
 			int digit = s[i] - '0';
 
-			boolean = 1;
 			result = result * 10 + digit;
 		}
 
-		else if (boolean == 1)
-
+		else
+		{
 			break;
-
+		}
 	}
 	result *= sign;
 	return (result);

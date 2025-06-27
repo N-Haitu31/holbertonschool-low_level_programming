@@ -19,7 +19,7 @@ char *_strcat(char *dest, char *src)
 
 	while (src[j] != '\0') /*Boucle pour copier les caractères de src vers dest*/
 	{
-		dest[i] = src[j]; /*Copier le caractère actuel de src dans dest à la position finde*/
+		dest[i] = src[j]; /*Copier le caractère actuel de src dans dest à la position fin*/
 
 		i++; /*Passer à la position suivante dans dest*/
 		j++; /*Passer à la position suivante dans src*/

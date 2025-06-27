@@ -22,4 +22,8 @@ C - Pointers, arrays and strings
 
 100-atoi.c : Write a function that convert a string to an integer.
 
+C - More pointers, arrays and strings
+
 0-strcat.c : Write a function that concatenates two strings
+
+1-strncat.c : Write a function that concatenates two strings

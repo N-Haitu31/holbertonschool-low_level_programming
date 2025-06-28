@@ -9,7 +9,7 @@
 char *cap_string(char *str)
 
 {
-	int w = 0;
+	int w = 1;
 	int capitalize_next = 0;
 
 	while (str[w] != '\0')

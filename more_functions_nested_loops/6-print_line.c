@@ -2,7 +2,6 @@
 
 /**
  * print_line - draws a straight line n char.
- * @n: the number of "_" to print
  */
 
 void print_line(int n)

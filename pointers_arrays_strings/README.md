@@ -39,3 +39,11 @@ C - More pointers, arrays and strings
 6-cap_string.c : Write a function that capitalizes all words of a string.
 
 Write a function that encodes a string into 1337.
+
+
+
+===============C - Even more pointers, arrays and strings==========
+
+0-memset.c : Write a function that fills memory with a constant byte.
+
+1-memcpy.c : Write a function that copies memory area.

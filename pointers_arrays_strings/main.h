@@ -1,4 +1,4 @@
-void reset_to_98(int *n);
+void print_chessboard(char (*a)[8]);
 void swap_int(int *a, int *b);
 int _strlen(char *s);
 void _puts(char *str);
@@ -24,3 +24,4 @@ char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
+void print_chessboard(char (*a)[8]);

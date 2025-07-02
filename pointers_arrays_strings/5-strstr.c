@@ -29,7 +29,7 @@ char *_strstr(char *haystack, char *needle)
 /*avec le caractère de 'needle' à la position j*/
 /*compare haystack à partir de i, avançant avec j*/
 /*qui est notre point de départ potentiel pour 'needle'*/
-				if (haystack[i + j] != needle[j])
+				if (haystack[i + j] == '\0' || haystack[i + j] != needle[j])
 				{
 
 			/*Non-correspondance : sort de la boucle interne*/

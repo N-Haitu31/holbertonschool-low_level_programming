@@ -14,6 +14,11 @@ char *_strstr(char *haystack, char *needle)
 	int i = 0;
 	int j = 0;
 
+	if (needle[0] == '\0')
+	{
+		return (haystack);
+	}
+
 	for (i = 0; haystack[i] != '\0'; i++)
 	{
 		/*Vérifie si le caractère actuel de 'haystack' (haystack[i])*/
@@ -24,7 +29,6 @@ char *_strstr(char *haystack, char *needle)
 /*Elle est exécutée ssi le premier caractère de 'needle' correspond*/
 			for (j = 0; needle[j] != '\0'; j++)
 			{
-
 /*Compare le caractère de 'haystack' à la position (i + j)*/
 /*avec le caractère de 'needle' à la position j*/
 /*compare haystack à partir de i, avançant avec j*/

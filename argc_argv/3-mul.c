@@ -11,13 +11,13 @@
 int main(int argc, char *argv[])
 
 {
-	int j = 0;
-	int nombre1, nombre2, produit;
+	unsigned int j = 0;
+	unsigned int nombre1, nombre2, produit;
 
 	if (argc != 3)
 	{
-	printf("Error\n");
-	return (1);
+		printf("Error\n");
+		return (1);
 	}
 
 	while (argv[1][j] != '\0')
@@ -27,21 +27,24 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-	j++;
+		j++;
 	}
+
+	j = 0;
 
 	while (argv[2][j] != '\0')
 	{
 		if (argv[2][j] < '0' || argv[2][j] > '9')
 		{
-		printf("Error\n");
-		return (1);
+			printf("Error\n");
+			return (1);
 		}
-	j++;
+		j++;
 	}
 
 	nombre1 = atoi(argv[1]);
 	nombre2 = atoi(argv[2]);
+
 	produit = nombre1 * nombre2;
 
 	printf("%d\n", produit);

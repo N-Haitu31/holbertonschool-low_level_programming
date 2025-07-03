@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 
 {
-	unsigned int j = 0;
+	int j = 0;
 	unsigned int nombre1, nombre2, produit;
 
 	if (argc != 3)

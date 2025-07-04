@@ -11,44 +11,24 @@
 int main(int argc, char *argv[])
 
 {
-	int j = 0;
-	unsigned int nombre1, nombre2, produit;
+	int nb1;
+	int nb2;
 
-	if (argc != 3)
+	nb1 = nb2 = 0;
+
+	if (argc == 3)
+	{
+		nb1 = atoi(argv[1]);
+		nb2 = atoi(argv[2]);
+
+		printf("%d\n", nb1 * nb2);
+		return (0);
+	}
+
+	else
 	{
 		printf("Error\n");
-		return (1);
 	}
 
-	while (argv[1][j] != '\0')
-	{
-		if (argv[1][j] < '0' || argv[1][j] > '9')
-		{
-			printf("Error\n");
-			return (1);
-		}
-		j++;
-	}
-
-	j = 0;
-
-	while (argv[2][j] != '\0')
-	{
-		if (argv[2][j] < '0' || argv[2][j] > '9')
-		{
-			printf("Error\n");
-			return (1);
-		}
-		j++;
-	}
-
-	nombre1 = atoi(argv[1]);
-	nombre2 = atoi(argv[2]);
-
-	produit = nombre1 * nombre2;
-
-	printf("%d\n", produit);
-
-	return (0);
+	return (1);
 }
-

@@ -43,8 +43,8 @@ int main(int argc, char *argv[])
 	/*La division donne le nombre d'éléments.*/
 	for (i = 0; i < sizeof(coins) / sizeof(coins[0]); i++)
 	{
-		while (amount >= coins[i]) /*Tant que le montant restant est supérieur ou égal à la pièce courante
-        while (amount >= coins[i])*/
+		while (amount >= coins[i]) /*Tant que le montant restant est supérieur ou égal à la pièce courante*/
+        while (amount >= coins[i])
 		{
 			amount -= coins[i]; /*Soustrait la valeur de la pièce du montant restant*/
 			total_coins++; /*Incrémente le compteur de pièces*/

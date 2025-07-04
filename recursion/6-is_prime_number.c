@@ -4,7 +4,7 @@
 int is_prime_number_helper(int n, int divisor)
 
 {
-	if (n <= 2)
+	if (n < 2)
 	{
 		return (0);
 	}

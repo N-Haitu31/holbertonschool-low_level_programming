@@ -26,8 +26,8 @@ int main(int argc, char *argv[])
 
 	else /*Si le nombre d'arguments est correct*/
 	{
-		amount = atoi(argv[1]); /*Convertit le premier argument de la ligne de commande (argv[1]) en un entier.
-        amount = atoi(argv[1]);*/
+		amount = atoi(argv[1]); /*Convertit le premier argument de la ligne de commande (argv[1]) en un entier*/
+	        amount = atoi(argv[1]));
 
 		if (amount < 0) /*Vérifie si le montant est négatif*/
 		{
@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 	for (i = 0; i < sizeof(coins) / sizeof(coins[0]); i++)
 	{
 		while (amount >= coins[i]) /*Tant que le montant restant est supérieur ou égal à la pièce courante*/
-        while (amount >= coins[i])
+        	while (amount >= coins[i])
 		{
 			amount -= coins[i]; /*Soustrait la valeur de la pièce du montant restant*/
 			total_coins++; /*Incrémente le compteur de pièces*/

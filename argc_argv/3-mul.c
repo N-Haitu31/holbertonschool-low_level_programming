@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 
 {
-	int nb1; /*Déclare deux variables entières, res1 et res2, pour stocker les nombres à multiplier.*/
+	int nb1; /*Déclare deux variables entières, nb1 et nb2, pour stocker les nombres à multiplier.*/
 	int nb2;
 
 	nb1 = nb2 = 0;

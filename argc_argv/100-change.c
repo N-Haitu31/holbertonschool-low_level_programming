@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int amount = 0;
 	int total_coins = 0;
-	long unsigned int i;
+	unsigned int i;
 	int coins[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)

@@ -8,3 +8,6 @@ Write a function that returns a pointer to a newly allocated space in memory, wh
 
 2-str_concat.c : 2. He who is not courageous enough to take risks will accomplish nothing in life
 Write a function that concatenates two strings.
+
+3-alloc_grid.c : 3. If you even dream of beating me you'd better wake up and apologize
+Write a function that returns a pointer to a 2 dimensional array of integers.

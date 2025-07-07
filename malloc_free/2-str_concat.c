@@ -16,10 +16,10 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i;
 	char *result;
 
-	if (s1 == NULL)
+	if (s1 == NULL) /*Si s1 est NULL, il pointe maintenant vers une chaîne vide littérale*/
 		s1 = "";
 
-	if (s2 == NULL)
+	if (s2 == NULL) /*Si s2 est NULL, il pointe maintenant vers une chaîne vide littérale*/
 		s2 = "";
 
 	while (s1[len1] != '\0')

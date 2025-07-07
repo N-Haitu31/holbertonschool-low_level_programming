@@ -14,7 +14,7 @@ int **alloc_grid(int width, int height)
 	int i, j; /*Variables d'itération pour les boucles (lignes et colonnes)*/
 	int **grid; /*Déclare un pointeur de pointeur d'entiers. Ce sera notre grille 2D*/
 
-	if (width <= 0 || height == 0) /*Une grille ne peut pas avoir une largeur nulle ou négative, ni une hauteur nulle ou négative*/
+	if (width <= 0 || height <= 0) /*Une grille ne peut pas avoir une largeur nulle ou négative, ni une hauteur nulle ou négative*/
 	{
 		return (NULL);
 	}

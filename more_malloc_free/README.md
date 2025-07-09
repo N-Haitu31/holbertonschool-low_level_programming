@@ -12,4 +12,6 @@ Write a function that concatenates two strings.
 
 Write a function that allocates memory for an array, using malloc.
 
+3-array_range.c - 3. array_range
 
+Write a function that creates an array of integers.

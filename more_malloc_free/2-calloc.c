@@ -29,7 +29,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	for (i = 0; i < nmemb; i++)
 	{
-		((char *) pointeur)[i] = 0;
+		pointeur[i] = 0;
 	}
 
 	return (pointeur);

@@ -46,7 +46,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		printf("%d", number);
 
 		/*Mise à jour du drapeau 'is_first' :*/
-		/*Après avoir imprimé le premier nombre, on met 'is_first' à 0 (faux).*/		/*Cela garantit que pour tous les nombres suivants, la condition du séparateur*/
+		/*Après avoir imprimé le premier nombre, on met 'is_first' à 0 (faux).*/
+		/*Cela garantit que pour tous les nombres suivants, la condition du sépa    rateur*/
 		/*('!is_first') sera vraie, permettant au séparateur d'être imprimé.*/
 		is_first = 0;
 	}

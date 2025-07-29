@@ -11,3 +11,6 @@
 
 ## 3. Add node at the end
 ### File: 3-add_node_end.c - Write a function that adds a new node at the end of a list_t list.
+
+## 4. Free list
+### File: 4-free_list.c - Write a function that frees a list_t list.

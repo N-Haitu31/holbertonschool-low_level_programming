@@ -20,3 +20,9 @@ File: 5-get_dnodeint.c - Write a function that returns the nth node of a dlistin
 
 ## 6. Sum list
 File: 6-sum_dlistint.c - Write a function that returns the sum of all the data (n) of a dlistint_t linked list.
+
+## 7. Insert at index
+File: 7-insert_dnodeint.c - Write a function that inserts a new node at a given position.
+
+## 8. Delete at index
+File: 8-delete_dnodeint.c - Write a function that deletes the node at index index of a dlistint_t linked list.

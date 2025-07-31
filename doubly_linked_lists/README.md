@@ -8,3 +8,6 @@ File: 1-dlistint_len.c - Write a function that returns the number of elements in
 
 ## 2. Add node
 File: 2-add_dnodeint.c - Write a function that adds a new node at the beginning of a dlistint_t list.
+
+## 3. Add node at the end
+File: 3-add_dnodeint_end.c - Write a function that adds a new node at the end of a dlistint_t list.

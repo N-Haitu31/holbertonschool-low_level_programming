@@ -1,55 +1,48 @@
-#include <stdlib.h>
 #include "lists.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
-* insert_dnodeint_at_index - Inserts a new node at a given position
-* @h: Double pointer to the head of the list
-* @idx: Index at which the new node should be added (starting from 0)
-* @n: Value to store in the new node
-*
-* Return: Address of the new node, or NULL if it failed
-*/
-
+ * insert_dnodeint_at_index - a function that insert a node in a given index
+ * @h: the head of the list
+ * @idx: the index of where the new node should be added
+ * @n: the int to add to the new node
+ *
+ * Return: the new node if it suceeds
+ * NULL if index is wrong or malloc fails
+ */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	unsigned int count = 0;
-	dlistint_t *current = *h;
-	dlistint_t *new_node  = malloc(sizeof(dlistint_t));
+	dlistint_t *new_node, *indexed_node;
 
-	if (new_node == NULL)
+	if (idx == 0)
+		return (add_dnodeint(h, n));
+
+	indexed_node = *h;
+	while (idx > 0 && indexed_node != NULL)
+	{
+		indexed_node = indexed_node->next;
+		idx--;
+	}
+	if (indexed_node == NULL && idx != 0)
 		return (NULL);
 
-	new_node->n = n;
-	if (idx == 0)
-	{
-		/*return (add_dnodeint(h, n));*/
-		new_node->next = *h;
-		if (*h != NULL)
-			(*h)->prev = new_node;
-
-		*h = new_node;
-		return (new_node);
-	}
-	while (current != NULL && count < idx)
-	{
-		count++;
-		current = current->next;
-	}
-
-	if (current == NULL && count == idx)
+	if (indexed_node == NULL && idx == 0)
 		return (add_dnodeint_end(h, n));
 
-	else if (count < idx)
-	{
-		free(new_node);
+	new_node = malloc(sizeof(dlistint_t));
+	if (new_node == NULL)
 		return (NULL);
-	}
-	new_node->prev = current->prev;
-	new_node->next = current;
+	new_node->n = n;
 
-	if (current->prev != NULL)
-		current->prev->next = new_node;
+	new_node->next = indexed_node;
+	new_node->prev = indexed_node->prev;
+	indexed_node->prev = new_node;
 
-	current->prev = new_node;
+	if (new_node->prev != NULL)
+		new_node->prev->next = new_node;
+	else
+		*h = new_node;
+
 	return (new_node);
 }

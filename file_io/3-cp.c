@@ -6,11 +6,11 @@
 #include <sys/stat.h>
 #include "main.h"
 /**
-*close_with_error - check the code
-*@fd: file descriptor
-*@exit_code: is the shut is failed
-* Return: void.
-*/
+ *close_with_error - check the code
+ *@fd: file descriptor
+ *@exit_code: is the shut is failed
+ * Return: void.
+ */
 void close_with_error(int fd, int exit_code)
 {
 	if (close(fd) == -1)
@@ -21,11 +21,11 @@ void close_with_error(int fd, int exit_code)
 }
 
 /**
-* main - check the code
-*@argc: is a number of argument
-*@argv: is an array of argument strings
-* Return: Always 0.
-*/
+ * main - check the code
+ *@argc: is a number of argument
+ *@argv: is an array of argument strings
+ * Return: Always 0.
+ */
 
 int main(int argc, char *argv[])
 {
@@ -38,13 +38,13 @@ int main(int argc, char *argv[])
 
 	fd_from = open(argv[1], O_RDONLY);
 	if (fd_from == -1)
-		return (dprintf(2, "Error: Can't write to NAME_OF_THE_FILE\n", argv[1]), 98);
+		return (dprintf(2, "Error: Can't read from file %s\n", argv[1]), 98);
 
 	fd_to = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 	if (fd_to == -1)
 	{
 		close(fd_from);
-		return (dprintf(2, "Error: Can't write to NAME_OF_THE_FILE\n", argv[2]), 99);
+		return (dprintf(2, "Error: Can't write to file %s\n", argv[2]), 99);
 
 	}
 

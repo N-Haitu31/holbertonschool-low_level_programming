@@ -31,10 +31,10 @@ int main(int argc, char *argv[])
 {
 	int fd_from, fd_to;
 	char buffer[1024];
-	ssize_t bytes_read, bytes_written;
+	ssize_t bytes_read;
 
 	if (argc != 3)
-		return (write(2, "Usage: cp file_from file_to\n", 30), 97);
+		return (write(2, "Usage: cp file_from file_to\n", 29), 97);
 
 	fd_from = open(argv[1], O_RDONLY);
 	if (fd_from == -1)

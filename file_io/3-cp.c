@@ -38,13 +38,13 @@ int main(int argc, char *argv[])
 
 	fd_from = open(argv[1], O_RDONLY);
 	if (fd_from == -1)
-		return (dprintf(2, "Error: Can't read from file %s\n", argv[1]), 98);
+		return (dprintf(2, "Error: Can't write to NAME_OF_THE_FILE\n", argv[1]), 98);
 
-	fd_to = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0666);
+	fd_to = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 	if (fd_to == -1)
 	{
 		close(fd_from);
-		return (dprintf(2, "Error: Can't write to file %s\n", argv[2]), 99);
+		return (dprintf(2, "Error: Can't write to NAME_OF_THE_FILE\n", argv[2]), 99);
 
 	}
 

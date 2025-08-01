@@ -39,17 +39,17 @@ int append_text_to_file(const char *filename, char *text_content)
 		    return (-1);
 	    }
     }
-    
+
 	close(fd);
 	return (1);
 
 }
 
 /**
- *calculate_length - Calculate Lengh of a string
- *@text_content: is a string
- *Return: i
- */
+*calculate_length - Calculate Lengh of a string
+*@text_content: is a string
+*Return: i
+*/
 int calculate_length(char *text_content)
 {
 	int i = 0;

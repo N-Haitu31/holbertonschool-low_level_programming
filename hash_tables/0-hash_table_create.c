@@ -26,6 +26,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	if (h_t_create->array == NULL)
 	{
+        free(h_t_create);
 		return (NULL);
 	}
 

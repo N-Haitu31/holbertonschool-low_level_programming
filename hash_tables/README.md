@@ -18,3 +18,6 @@ File: 4-hash_table_get.c - Write a function that retrieves a value associated wi
 
 ## 5. >>> print(ht)
 File: 5-hash_table_print.c - Write a function that prints a hash table.
+
+## 6. >>> del ht
+File: 6-hash_table_delete.c - Write a function that deletes a hash table.
